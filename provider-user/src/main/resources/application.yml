@@ -4,6 +4,34 @@ server:
 spring:
   application:
     name: PROVIDER-USER
+  mvc:
+    throw-exception-if-no-handler-found: true
+    http:
+      encoding:
+        force-request: true
+  datasource:
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat,wall,log4j
+    initialSize: 5
+    maxActive: 20
+    maxPoolPreparedStatementPerConnectionSize: 20
+    maxWait: 60000
+    minEvictableIdleTimeMillis: 300000
+    minIdle: 5
+    poolPreparedStatements: true
+    testOnBorrow: false
+    testOnReturn: false
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://120.78.146.55:3306/booking?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    #    url: ENC(wZqzrIh2/A+VeIssX35GqYBMWECuUW9Y8i1K8fY34QvquoMRQvmEKP1dxPl/7o5oO250RFHJ+ctijjuVGdh1sDjP3u2b/Dkcg9eG6l9GGLoAmBpIU0ZECQvnr9MWbGs1nRR8VR457QI=)
+    #    username: ENC(83KoAUP7BQA5GRSqejSgqrD0wqBw47y6)
+    #    password: ENC(87D1u+uXaRzYP80xkYwzdgryMw9Q+vAG)
+    validationQuery: SELECT 1
 
 eureka:
   client:
@@ -17,3 +45,8 @@ info: #微服务详细信息
   app.name: booking
   author: liwenhui
   description: 用户模块提供方
+
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+

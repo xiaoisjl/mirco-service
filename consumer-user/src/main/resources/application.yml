@@ -5,7 +5,17 @@ server:
 spring:
   application:
     name: CONSUMER-USER
-  cloud:
-    config:
-      name: CONSUMER-USER
+#  cloud:
+#    config:
+#      name: CONSUMER-USER
 
+eureka:
+  client:
+    register-with-eureka: false
+
+ribbon:
+  eureka:
+    enabled: true
+
+
+name: liwenhui

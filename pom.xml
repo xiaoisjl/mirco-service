@@ -11,14 +11,16 @@
 
     <properties>
         <spring-cloud-version>Finchley.RELEASE</spring-cloud-version>
+        <spring-version>1.4.6.RELEASE</spring-version>
     </properties>
 
     <modules>
         <module>consumer-user</module>
         <module>config</module>
         <module>eureka</module>
-        <module>api</module>
+        <module>common</module>
         <module>provider-user</module>
+        <module>common</module>
     </modules>
 
     <parent>

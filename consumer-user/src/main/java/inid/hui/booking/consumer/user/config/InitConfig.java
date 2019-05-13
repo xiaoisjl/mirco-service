@@ -1,4 +1,4 @@
-package inid.hui.booking.provider.user.config;
+package inid.hui.booking.consumer.user.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;

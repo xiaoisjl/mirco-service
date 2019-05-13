@@ -1,13 +1,13 @@
-spring:
-  cloud:
-    config:
-      label: master
-      profile: DEV
-      uri: http://127.0.0.1:8888
-      backup:
-        enable: true
-        file: /config/cloud-config-backup.properties
-
+#spring:
+#  cloud:
+#    config:
+#      label: master
+#      profile: DEV
+#      uri: http://127.0.0.1:8888
+#      backup:
+#        enable: true
+#        file: /config/cloud-config-backup.properties
+#
 
 
 
