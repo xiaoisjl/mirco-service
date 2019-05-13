@@ -1,0 +1,11 @@
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: CONSUMER-USER
+  cloud:
+    config:
+      name: CONSUMER-USER
+
