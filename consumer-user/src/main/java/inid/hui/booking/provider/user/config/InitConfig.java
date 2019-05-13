@@ -1,4 +1,4 @@
-package inid.hui.booking.config.config;
+package inid.hui.booking.provider.user.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author ucs_liwenhui
- * @description TODO
+ * @description 初始化类
  * @date 2019/5/13 10:19
  **/
 @Component

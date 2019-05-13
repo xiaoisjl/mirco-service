@@ -1,11 +1,11 @@
-package inid.hui.booking.config;
+package inid.hui.booking.provider.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author ucs_liwenhui
- * @description TODO
+ * @description 启动类
  * @date 2019/5/13 9:45
  **/
 

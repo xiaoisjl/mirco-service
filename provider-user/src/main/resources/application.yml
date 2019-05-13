@@ -1,0 +1,19 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: PROVIDER-USER
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7070/eureka/
+  instance:
+    instance-id: PROVIDER-USER-9091 #自定义服务名称信息
+    prefer-ip-address: true #访问路径可以显示IP地址
+
+info: #微服务详细信息
+  app.name: booking
+  author: liwenhui
+  description: 用户模块提供方

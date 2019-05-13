@@ -1,19 +1,21 @@
-package inid.hui.booking.config;
+package inid.hui.booking.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author ucs_liwenhui
  * @description TODO
- * @date 2019/5/13 9:45
+ * @date 2019/5/13 11:17
  **/
-@EnableConfigServer
+
+
+@EnableEurekaServer
 @SpringBootApplication
-public class ConfigApplication {
+public class EurekaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigApplication.class, args);
+        SpringApplication.run(EurekaApplication.class, args);
     }
 }
