@@ -1,4 +1,4 @@
-package inid.hui.booking.provider.user;
+package inid.hui.booking.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

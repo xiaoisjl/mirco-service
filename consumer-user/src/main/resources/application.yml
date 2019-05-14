@@ -1,23 +1,14 @@
-server:
-  port: 8081
-
 spring:
   application:
     name: CONSUMER-USER
-#  cloud:
-#    config:
-#      name: CONSUMER-USER
+  cloud:
+    config:
+      name: CONSUMER-USER, EUREKA-CLIENT
 
 eureka:
   client:
     register-with-eureka: false
-    service-url:
-      defaultZone: http://localhost:7070/eureka/
 
 ribbon:
   eureka:
     enabled: true
-
-
-
-name: liwenhui

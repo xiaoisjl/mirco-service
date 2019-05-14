@@ -1,1 +1,5 @@
-name: liwenhui
+server:
+  port: 8081
+
+default:
+  password: 123456

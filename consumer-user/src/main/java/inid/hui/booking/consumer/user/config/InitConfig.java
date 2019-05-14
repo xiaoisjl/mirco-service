@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class InitConfig implements ApplicationRunner {
 
-    @Value("${name}")
+    @Value("${default.password}")
     private String userName;
 
     @Override
