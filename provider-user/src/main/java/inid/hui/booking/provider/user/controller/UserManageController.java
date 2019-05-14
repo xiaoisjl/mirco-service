@@ -7,6 +7,7 @@ import inid.hui.booking.bean.PO.User;
 import inid.hui.booking.provider.user.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/5/13 16:51
  **/
 @RestController
+@RequestMapping(value="api")
 public class UserManageController implements UserManageApi {
 
     @Autowired
