@@ -1,4 +1,4 @@
-package inid.hui.booking.consumer.user.config;
+package inid.hui.booking.provider.user.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;

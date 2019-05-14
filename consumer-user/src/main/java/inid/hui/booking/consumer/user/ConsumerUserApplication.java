@@ -16,7 +16,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan({"inid.hui.booking.consumer.user","inid.hui.booking.api.user"})
 @EnableFeignClients(basePackages = "inid.hui.booking.api.user")
-@FeignClient
 @EnableEurekaClient
 @SpringBootApplication
 @EnableDiscoveryClient

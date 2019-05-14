@@ -1,5 +1,7 @@
 package inid.hui.booking.bean.PO;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.util.Date;
 
 /**
@@ -9,6 +11,7 @@ import java.util.Date;
  **/
 public class User {
 
+    @TableId
     private Integer userId;
 
     private String userName;
