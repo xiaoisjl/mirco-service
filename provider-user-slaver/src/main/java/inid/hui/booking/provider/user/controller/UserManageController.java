@@ -24,8 +24,7 @@ public class UserManageController implements UserManageApi {
 
     @Override
     public User selectOne(@RequestBody User param) {
-        System.out.println("----------------- master --------------------------");
-
+        System.out.println("----------------- slaver --------------------------");
         Wrapper wrapper = new QueryWrapper(param);
         return userMapper.selectOne(wrapper);
     }

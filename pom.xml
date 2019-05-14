@@ -30,6 +30,7 @@
         <module>common</module>
         <module>provider-user</module>
         <module>common</module>
+        <module>provider-user-slaver</module>
     </modules>
 
     <parent>
