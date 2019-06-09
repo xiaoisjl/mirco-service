@@ -48,9 +48,9 @@ public class SpringSimpleJob implements SimpleJob {
                 .eq("location", shardingContext.getShardingParameter())
                 .eq("status", Job.Status.TODO);
 
-        IPage<Job> page = new Page<>();
+        IPage<Job> page = new Page<>(1, 1);
 
-        List<Job> list = jobMapper.selectList(queryWrapper);
+        List<Job> list = jobMapper.selectPage(page, queryWrapper).getRecords();
         for (Job job : list) {
             System.out.println("----------执行作业----------");
         }
