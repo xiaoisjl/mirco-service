@@ -25,7 +25,7 @@ spring:
     testWhileIdle: true
     timeBetweenEvictionRunsMillis: 60000
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://120.78.146.55:3306/booking?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://120.78.146.55:3306/my-order?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: root
     #    url: ENC(wZqzrIh2/A+VeIssX35GqYBMWECuUW9Y8i1K8fY34QvquoMRQvmEKP1dxPl/7o5oO250RFHJ+ctijjuVGdh1sDjP3u2b/Dkcg9eG6l9GGLoAmBpIU0ZECQvnr9MWbGs1nRR8VR457QI=)
@@ -50,3 +50,11 @@ mybatis-plus:
   mapper-locations: classpath:mybatis/mapper/*.xml
   config-location: classpath:mybatis/mybatis-config.xml
 
+regCenter:
+  serverList: 120.78.146.55:2181
+  namespace: elastic-job
+
+simpleJob:
+  cron: 0/5 * * * * ?
+  shardingTotalCount: 3
+    shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
