@@ -36,7 +36,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7070/eureka/
+      defaultZone: http://localhost:7070/eureka/,http://localhost:7071/eureka/
   instance:
     instance-id: PROVIDER-USER-9092 #自定义服务名称信息
     prefer-ip-address: true #访问路径可以显示IP地址

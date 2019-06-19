@@ -25,7 +25,9 @@ public class UserManageController implements UserManageApi {
     @Override
     public User selectOne(@RequestBody User param) {
         System.out.println("----------------- master --------------------------");
-
+        if (param.getUserId() == 2) {
+            throw new RuntimeException("出错啦");
+        }
         Wrapper wrapper = new QueryWrapper(param);
         return userMapper.selectOne(wrapper);
     }

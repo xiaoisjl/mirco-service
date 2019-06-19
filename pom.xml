@@ -17,6 +17,8 @@
         <spring-cloud-starter-eureka-server-version>${spring-cloud-starter-version}</spring-cloud-starter-eureka-server-version>
         <spring-cloud-starter-eureka-version>${spring-cloud-starter-version}</spring-cloud-starter-eureka-version>
         <spring-cloud-starter-feign-version>${spring-cloud-starter-version}</spring-cloud-starter-feign-version>
+        <spring-cloud-starter-hystrix-version>${spring-cloud-starter-version}</spring-cloud-starter-hystrix-version>
+        <spring-cloud-starter-hystrix-dashboard-version>${spring-cloud-starter-version}</spring-cloud-starter-hystrix-dashboard-version>
 
         <druid-version>1.1.5</druid-version>
         <mybatis-plus-version>3.1.0</mybatis-plus-version>
@@ -31,6 +33,7 @@
         <module>provider-user</module>
         <module>common</module>
         <module>provider-user-slaver</module>
+        <module>eureka-copy</module>
     </modules>
 
     <parent>
@@ -73,6 +76,17 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-feign</artifactId>
                 <version>${spring-cloud-starter-feign-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-hystrix</artifactId>
+                <version>${spring-cloud-starter-hystrix-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+                <version>${spring-cloud-starter-hystrix-dashboard-version}</version>
             </dependency>
 
             <!--数据库连接池-->

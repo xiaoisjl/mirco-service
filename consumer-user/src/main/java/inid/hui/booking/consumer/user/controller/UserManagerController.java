@@ -1,5 +1,6 @@
 package inid.hui.booking.consumer.user.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import inid.hui.booking.api.user.UserManageApi;
 import inid.hui.booking.bean.PO.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,10 +24,14 @@ public class UserManagerController {
     private UserManageApi userManageApi;
 
     @RequestMapping("selectOne")
-    public User getUser() {
+    public User getUser(Integer userId) {
         User user = new User();
-        user.setUserId(1);
+        user.setUserId(userId);
         return userManageApi.selectOne(user);
+    }
+
+    public User defaultStores() {
+        return new User();
     }
 
     @RequestMapping("test")

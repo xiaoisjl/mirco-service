@@ -1,21 +1,21 @@
 server:
-  port: 7071
+  port: 7072
 
 eureka:
   instance:
-    hostname: eureka_1.com
+    hostname: eureka_2.com
   server:
     enable-self-preservation: true
     eviction-interval-timer-in-ms: 10000
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:7071/eureka/
+      defaultZone: http://127.0.0.1:7071/eureka/
 
 spring:
   application:
-    name: EUREKA-SERVER-1
+    name: EUREKA-SERVER-2
 #  cloud:
 #    config:
 #      name: EUREKA-SERVER-NODE1
